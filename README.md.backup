@@ -109,7 +109,7 @@
 			*	temperaturas maximas y minimas de ciertas ciudades
 			*	barrios con mayor promedio de m2 de propiedades
 			
-	![](splitaplycombine.png)
+	![](scr/splitaplycombine.png)
 			
 	*	split:
 		-	groupby('columna') o multiples columnas.
@@ -123,27 +123,27 @@
 	-	Ejemplo: prom y count de edad por premio.
 		+	df.groupby(\['award']).agg({'age'}:\['mean','count'])
 		+	Esto devuelve premios como indice y cada uno tiene su mean y count asociado.(ojo en dos niveles)
-		![](2niveles.png)
+		![](scr/2niveles.png)
 		+	Ahora si posterior queremos filtrar tambien : 
 			*	grouped.loc\[grouped\[('age','count')]>5 ] (y esto devuelve las age de los award con mas de 5 ocurrencias)
 			*	 una vez que tengo el tipo de dato grouped, puedo acceder a dichos elementos con grouped.get_group('elemento')
 			*	ojo, dsps de operar hay que llevar las columnas a plana. Asi es mas facil trabajar
 			*	podemos hacer aggregate en multiples columnas
-			*	![](agg2elementos.png)
-			*	![](formatoagg2col.png)
+			*	![](scr/agg2elementos.png)
+			*	![](scr/formatoagg2col.png)
 			*	Como aplanamos?
-			*	![](como aplanar.png)
+			*	![](scr/como aplanar.png)
 			*	
 			
 *	USAR NLARGEST ANTES QUE SORT Y HACER HEAD.
 
 *	Transform
 	-	Va mas directo, igual ojo. Nos devuelve una 			lista del mismo tam que la ingresada. Ideal para 	     acoplar al dataframe.
-	-	![](transform.png)
+	-	![](scr/transform.png)
 	-	el caso ideal es :
-	-	![](transfrom,eg.png)
+	-	![](scr/transfrom,eg.png)
 	-	tambien se puede usar en dataFrame:
-		+	![](trasnsfromaFrame.png)
+		+	![](scr/trasnsfromaFrame.png)
 		
 *	APEEND, CONCATS Y MERGE.
 	-	append, para agregar rows a nuestro dataFrame.(es un append hecho y derecho, no hay mucho que agregar)
