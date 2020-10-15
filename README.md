@@ -132,7 +132,7 @@
 			*	![](scr/agg2elementos.png)
 			*	![](scr/formatoagg2col.png)
 			*	Como aplanamos?
-			*	![](scr/como aplanar.png)
+			*	![](scr/como_aplanar.png)
 			*	
 			
 *	USAR NLARGEST ANTES QUE SORT Y HACER HEAD.
